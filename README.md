@@ -31,6 +31,6 @@ change the fully-qualified class name in the `java.main.class` property.
 
 ### Executing the Tool
 
-A convenience script (`./bin/run.sh`) is provided which will find and execute the main class in
+A convenience script (`./bin/sampleTool`) is provided which will find and execute the main class in
 the executable jar (passing along any arguments).  You may wish to write additional scripts that
 call various options on the main class or even call a main method in a different class.
