@@ -22,6 +22,9 @@ GITHUB_TOKEN
 A convenience script (`./build.sh`) is provided that will check the surrounding environment and
 package the project.
 
+Note the first time this project builds (especially with an empty local maven repository), it may
+take a few minutes as it downloads dependencies.  Subsequent builds will be much faster.
+
 A successful build will result in an executable uber jar (jar with dependencies) that will run
 the Java main() method inside.  To change which main method is used, you must open pom.xml and
 change the fully-qualified class name in the `java.main.class` property.
