@@ -18,14 +18,6 @@
     <java.main.class>org.veupathdb.toolsample.Main</java.main.class>
   </properties>
 
-  <repositories>
-    <repository>
-      <id>veupathdb</id>
-      <name>VEuPathDB Libraries</name>
-      <url>https://maven.pkg.github.com/veupathdb/maven-packages</url>
-    </repository>
-  </repositories>
-
   <dependencies>
     <dependency>
       <groupId>org.gusdb</groupId>
@@ -58,6 +50,14 @@
       <version>2.17.2</version>
     </dependency>
   </dependencies>
+
+  <repositories>
+    <repository>
+      <id>veupathdb</id>
+      <name>VEuPathDB Libraries</name>
+      <url>https://maven.pkg.github.com/veupathdb/maven-packages</url>
+    </repository>
+  </repositories>
 
   <build>
     <finalName>executable</finalName>
