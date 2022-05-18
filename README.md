@@ -2,7 +2,7 @@
 
 This template uses the Apache Maven build system and assumes a requirement to connect to an Oracle database.
 
-### System Prerequisites:
+### System Prerequisites
 
 - Java 11+
 - Maven 3+
