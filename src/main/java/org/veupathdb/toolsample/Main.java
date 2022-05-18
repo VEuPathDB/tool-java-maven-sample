@@ -1,5 +1,7 @@
 package org.veupathdb.toolsample;
 
+import static org.gusdb.fgputil.runtime.Environment.getRequiredVar;
+
 import org.gusdb.fgputil.db.platform.SupportedPlatform;
 import org.gusdb.fgputil.db.pool.DatabaseInstance;
 import org.gusdb.fgputil.db.pool.SimpleDbConfig;
@@ -9,16 +11,10 @@ public class Main {
 
   public static void main(String args[]) throws Exception {
 
-    // sample takes connection arguments via command line
-    if (args.length != 3) {
-      System.err.println("Requires three arguments: <connectionUrl> <connectionUser> <connectionPassword>");
-      System.exit(1);
-    }
-
-    // read args
-    String connectionUrl = args[0];
-    String connectionUser = args[1];
-    String connectionPassword = args[2];
+    // read required environment vars
+    String connectionUrl = getRequiredVar("DB_CONNECTION_URL");
+    String connectionUser = getRequiredVar("DB_USERNAME");
+    String connectionPassword = getRequiredVar("DB_PASSWORD");
 
     // instantiate a connection to the database
     try (DatabaseInstance db = new DatabaseInstance(SimpleDbConfig.create(
