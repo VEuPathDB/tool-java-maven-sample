@@ -16,6 +16,7 @@ variables are:
 GITHUB_USERNAME
 GITHUB_TOKEN
 ```
+If you do not yet have a Github Personal Access Token, follow the instructions [here](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token).  You will need to select at least the 'read:packages' permission, but may want to select a other permissions so your token can be used in other contexts.
 
 ### Building the Project
 
